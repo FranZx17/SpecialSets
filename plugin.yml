@@ -1,0 +1,4 @@
+  name: SpecialSets
+  version: 3.0.0
+  main: vale\Loader
+  api: 3.0.0
