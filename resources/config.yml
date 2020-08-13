@@ -1,0 +1,25 @@
+
+
+
+
+##Special Sets Config####
+
+
+HelmetName: "§r§c§lPhantom Hood §r§5§l[§77§5§l] §f(§r§f#0310§l§f)"
+ChestPlateName: "§r§c§lPhantom Robe §r§5§l[§77§5§l] §f(§r§f#0310§l§f)"
+LeggingsName: "§r§c§lPhantom Leggs §r§5§l[§77§5§l] §f(§r§f#0310§l§f)"
+BootsName: "§r§c§lPhantom Cleaves §r§5§l[§77§5§l] §f(§r§f#0310§l§f)"
+
+
+
+
+###SpecialSets Enchantments###
+SharpnessLevel: "6"
+UnbreakingLevel: "3"
+ProtectionLevel: "5"
+
+
+
+###PhantomSword###
+PhantomSwordName: "§r§cPhantom Sword"
+LightningVolume: "2"
