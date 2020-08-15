@@ -97,12 +97,18 @@ class PlayerAPI implements Listener
             Server::getInstance()->broadcastPacket($player->getLevel()->getPlayers(), $sound);
         }
 
-      public static function setArmourDurability(Item $item int string){
+      public static function setArmourDurability(Item $item){
 
        $durablity = Loader::getInstance()->getConfig()->get("Durability");
        $item->setDurability($durability);
 
 
    }
+    
+    public static function getPlayerByName(Player $player){
+      
+        return $player->getName();
+        
+    }
 
 }
