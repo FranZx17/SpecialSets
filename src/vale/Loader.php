@@ -9,7 +9,7 @@ use vale\api\PlayerAPI;
 use vale\api\SpecialAPI;
 use vale\commands\PhantomBag;
 use vale\sets\PhantomSet;
-use vale\sets\YijkiSet;
+//use vale\sets\YijkiSet;
 
 
 class Loader extends PluginBase
@@ -47,7 +47,7 @@ class Loader extends PluginBase
     public function loadSets()
     {
         new PhantomSet($this);
-        new YijkiSet($this);
+        //new YijkiSet($this);
 
 
     }
