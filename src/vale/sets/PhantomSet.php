@@ -184,10 +184,8 @@ class PhantomSet implements Listener
 
         $player = $event->getDamager();
         $entity = $event->getEntity();
-          $helm = $entity->getArmorInventory()->getHelmet();
-                $chest = $entity->getArmorInventory()->getChestplate();
-                $leggings = $entity->getArmorInventory()->getLeggings();
-                $boots = $entity->getArmorInventory()->getBoots();
+          
+              
         if ($player instanceof Player) {
             if ($entity instanceof Player) {
               
