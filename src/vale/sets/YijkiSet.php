@@ -5,6 +5,6 @@ namespace vale\sets;
 
 
 
-class YijkiSet implements Listener{
+class YijkiSet{
 
 }
