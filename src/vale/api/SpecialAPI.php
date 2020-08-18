@@ -11,7 +11,7 @@ use pocketmine\item\Item;
 use pocketmine\Player;
 use vale\Loader;
 
-class SpecialAPI implements Listener
+class SpecialAPI
 {
 
     /**
@@ -23,7 +23,7 @@ class SpecialAPI implements Listener
     public function __construct(Loader $main)
     {
         $this->main = $main;
-        $this->main->getServer()->getPluginManager()->registerEvents($this, $main);
+
     }
 
 
@@ -123,4 +123,47 @@ class SpecialAPI implements Listener
         $player->getInventory()->addItem($sword);
     }
 
+    /**
+     * @param Player $player
+     */
+
+
+
+
+   /** public static function giveYetiHelmet(Player $player){
+        $helmet = Item::get(310);
+        PlayerAPI::addProtection($helmet);
+        PlayerAPI::addUnbreaking($helmet);
+        $name1 = Loader::getInstance()->getConfig()->get("YetiHelmetName");
+        $helmet->setCustomName($name1);
+        $helmet->setLore([
+            '§r§bThe Frozen Cap of The Yeti.',
+            '§r§b§lYETI SET BONUS',
+            '§r§bDeal +25% damage to all enemies.',
+            '§r§7(Requires all 4 Yeti Items)',
+
+        ]);
+        $player->getInventory()->addItem($helmet);
+
+
+    }
+   */
+
+    /*public static function giveYetiChestPlate(Player $player){
+
+    }
+
+    public static function giveYetiLeggings(Player $player){
+
+
+
+    }
+
+
+    public static function giveYetiBoots(Player $player){
+
+
+
+    }
+   */
 }
