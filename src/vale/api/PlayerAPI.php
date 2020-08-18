@@ -119,7 +119,12 @@ class PlayerAPI implements Listener
     public function onInteract(PlayerInteractEvent $event)
     {
         $player = $event->getPlayer();
+        $inv = $player->getInventory();
+        $hand = $inv->getItemInHand();
         if ($player->getInventory()->getItemInHand()->getId() === 54 and $player->getInventory()->getItemInHand()->getCustomName() === "§r§7(§cSpecial Set Pouch§r§7)") {
+            $hand->setCount($hand->getCount() - 1);
+			$inv->setItemInHand($hand);
+			$event->setCancelled(true);
             self::giveRandomReward($player);
 
         }
