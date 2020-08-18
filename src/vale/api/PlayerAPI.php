@@ -234,10 +234,7 @@ class PlayerAPI implements Listener
 
         }
 
-        else{
-            Server::getInstance()->getLogger()->alert("Tried to give Item to a non existent Player");
-        }
-
+      
     }
 
 }
