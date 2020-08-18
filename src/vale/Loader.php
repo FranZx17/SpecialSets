@@ -45,10 +45,6 @@ class Loader extends PluginBase
 
 
 
-    /**
-     * @param string $set
-     */
-
     public function loadSets()
     {
         new PhantomSet($this);
@@ -57,9 +53,7 @@ class Loader extends PluginBase
 
     }
 
-    /**
-     * @param string $api
-     */
+  
 
     public function API()
     {
