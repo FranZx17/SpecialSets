@@ -4,11 +4,14 @@
 namespace vale;
 
 
+use pocketmine\plugin\Plugin;
 use pocketmine\plugin\PluginBase;
+use pocketmine\utils\MainLogger;
 use vale\api\PlayerAPI;
 use vale\api\SpecialAPI;
 use vale\commands\PhantomBag;
 use vale\sets\PhantomSet;
+use vale\api\RelicAPI;
 //use vale\sets\YijkiSet;
 
 
@@ -40,6 +43,8 @@ class Loader extends PluginBase
 
     }
 
+
+
     /**
      * @param string $set
      */
@@ -60,6 +65,7 @@ class Loader extends PluginBase
     {
         new PlayerAPI($this);
         new SpecialAPI($this);
+        new RelicAPI($this);
 
 
     }
