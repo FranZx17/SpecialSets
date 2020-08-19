@@ -139,8 +139,8 @@ class PlayerAPI implements Listener
 
                 case 1:
                     $helmet = Item::get(310);
-                    PlayerAPI::addProtection($helmet);
-                    PlayerAPI::addUnbreaking($helmet);
+                    self::addProtection($helmet);
+                    self::addUnbreaking($helmet);
                     $name1 = Loader::getInstance()->getConfig()->get("HelmetName");
                     $helmet->setCustomName($name1);
                     $helmet->setLore([
@@ -160,8 +160,8 @@ class PlayerAPI implements Listener
 
 
                     $boots = Item::get(313);
-                    PlayerAPI::addProtection($boots);
-                    PlayerAPI::addUnbreaking($boots);
+                    self::addProtection($boots);
+                    self::addUnbreaking($boots);
                     $name4 = Loader::getInstance()->getConfig()->get("BootsName");
                     $boots->setCustomName($name4);
                     $boots->setLore([
@@ -179,8 +179,8 @@ class PlayerAPI implements Listener
 
                 case 3:
                     $legg = Item::get(312);
-                    PlayerAPI::addProtection($legg);
-                    PlayerAPI::addUnbreaking($legg);
+                    self::addProtection($legg);
+                    self::addUnbreaking($legg);
                     $name3 = Loader::getInstance()->getConfig()->get("LeggingsName");
                     $legg->setCustomName($name3);
                     $legg->setLore([
@@ -196,8 +196,8 @@ class PlayerAPI implements Listener
 
                 case 4:
                     $chest = Item::get(311);
-                    PlayerAPI::addProtection($chest);
-                    PlayerAPI::addUnbreaking($chest);
+                    self::addProtection($chest);
+                    self::addUnbreaking($chest);
                     $name2 = Loader::getInstance()->getConfig()->get("ChestPlateName");
                     $chest->setCustomName($name2);
                     $chest->setLore([
@@ -213,8 +213,8 @@ class PlayerAPI implements Listener
 
                 case 5:
                     $sword = Item::get(276);
-                    PlayerAPI::addUnbreaking($sword);
-                    PlayerAPI::addSharpness($sword);
+                    self::addUnbreaking($sword);
+                    self::addSharpness($sword);
                     $swordcustomname = Loader::getInstance()->getConfig()->get("PhantomSwordName");
                     $sword->setCustomName($swordcustomname);
                     $sword->setLore([
